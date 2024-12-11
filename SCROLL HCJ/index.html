@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll-triggered Line Animation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="black-section"></div>
+
+    <div class="line-container">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 800 2600"
+        preserveAspectRatio="xMidYMax meet"
+      >
+        <path
+          class="theLine"
+          d="M 400 50 
+             Q 700 200 400 350 
+             T 400 650 
+             Q 700 800 400 950 
+             T 400 1250
+             Q 700 1400 400 1550 
+             T 400 1850
+             Q 700 2000 400 2150"
+          fill="none"
+          stroke="white"
+          stroke-width="20px"
+        />
+        <text class="timeText" x="-110" y="50">1 Jan: Registration begins</text>
+        <circle class="ball ball01" cx="400" cy="50" r="20"></circle>
+
+        <text class="timeText" x="470" y="400">
+          20 Jan: Registration closes
+        </text>
+        <circle class="ball ball02" cx="400" cy="350" r="20"></circle>
+
+        <text class="timeText" x="-110" y="670">22 Jan: Projects disclose</text>
+        <circle class="ball ball03" cx="400" cy="650" r="20"></circle>
+
+        <text class="timeText" x="470" y="1000">29 Jan: Community bonding</text>
+        <circle class="ball ball04" cx="400" cy="950" r="20"></circle>
+
+        <text class="timeText" x="-110" y="1300">31 Jan: Phase one begins</text>
+        <circle class="ball ball05" cx="400" cy="1250" r="20"></circle>
+
+        <text class="timeText" x="470" y="1580">14 Feb: Phase one ends</text>
+        <circle class="ball ball07" cx="400" cy="1550" r="20"></circle>
+
+        <text class="timeText" x="-110" y="1900">15 Feb: Phase two begins</text>
+        <circle class="ball ball08" cx="400" cy="1850" r="20"></circle>
+
+        <text class="timeText" x="480" y="2200">28 Feb: Phase two ends</text>
+        <circle class="ball ball06" cx="400" cy="2150" r="20"></circle>
+      </svg>
+    </div>
+
+    <div class="black-section-2"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="life.js"></script>
+  </body>
+</html>
