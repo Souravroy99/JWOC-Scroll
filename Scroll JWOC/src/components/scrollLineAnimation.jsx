@@ -46,6 +46,16 @@ const ScrollLineAnimation = () => {
         },
       });
     }
+    //     gsap.to(".heart01", {
+    //   opacity: 1,
+    //   scrollTrigger: {
+    //     trigger: ".heart01",
+    //     start: "top 70%",
+    //     end: "top 50%",
+    //     scrub: true,
+    //     markers: false,
+    //   },
+    // });
   }, []);
 
   return (
@@ -91,7 +101,7 @@ const ScrollLineAnimation = () => {
             className="timeText timeText01"
             x="-221"
             y="50"
-            style={{ opacity: 0, fontWeight: "600"}}
+            style={{ opacity: 0, fontWeight: "600" }}
           >
             1 Jan: Registration begins
           </text>
@@ -182,6 +192,26 @@ const ScrollLineAnimation = () => {
             r="20"
             style={{ opacity: 0 }}
           ></circle>
+
+          {/*           
+          <text
+            className="timeText timeText06"
+            x="470"
+            y="1610"
+            style={{ opacity: 0, fontWeight: "600" }}
+          >
+            14 Feb: Phase one ends
+          </text>
+          <path
+            className="heart heart01"
+            d="M400,1550 
+              C380,1520 350,1520 350,1550 
+              C350,1570 400,1620 400,1650 
+              C400,1620 450,1570 450,1550 
+              C450,1520 420,1520 400,1550"
+            fill="red"
+            style={{ opacity: 0 }}
+          /> */}
 
           <text
             className="timeText timeText07"
